@@ -1,6 +1,3 @@
-(function () {
-'use strict';
-
 const buildRequest = ($target) => {
 
   const url = $target.getAttribute('action');
@@ -27,20 +24,20 @@ const buildRequest = ($target) => {
       'Accept': 'application/json'
     },
     body: JSON.stringify(body)
-  };
+  }
 
   const request = new Request(url, options);
 
   return request;
 
-};
+}
 
 const sendForm = ($request) => {
 
   console.log('send form');
   console.log($request);
 
-};
+}
  
 const initStart = ($form) => {
 
@@ -51,11 +48,6 @@ const initStart = ($form) => {
 
   });
 
-};
+}
 
-const startForm = document.getElementById('startShift');
-
-if(startForm) initStart(startForm);
-
-}());
-//# sourceMappingURL=bundle.js.map
+export default initStart;

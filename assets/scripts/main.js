@@ -1,4 +1,4 @@
-//import './modules/bootstrap.bundle';
-import initForms from './modules/forms';
+import { initStart, initAdd, initUpdate, initEnd } from './modules/index';
+const startForm = document.getElementById('startShift');
 
-initForms('Init forms is executed');
+if(startForm) initStart(startForm); 

@@ -6,7 +6,7 @@ const { dashboard, start, add, active, detail, update } = require('./client.cont
 
 // routes
 clientRouter.route('/').get(dashboard);
-clientRouter.route('/start', start);
+clientRouter.route('/start').get(start);
 clientRouter.route('/add').get(add);
 clientRouter.route('/active').get(active);
 clientRouter.route('/:id').get(detail);
