@@ -42,12 +42,12 @@
   </header>
 
   <main class="main container">
-    <section class="row">
-      <article class="col-md-7">
+    <section class="row g-0">
+      <article class="article col-md-7">
         <form class="row">
-          <legend class="col-md-12 mb-3">
+          <legend class="d-flex justify-content-between col-md-12 mb-3">
             <h2>Add Items</h2>
-            <p>items: <span>345</span></p>
+            <p><small>items: <span>345</span></small></p>
           </legend>
           <div class="col-md-12 mb-3">
             <label for="items" class="form-label">items</label>
@@ -55,13 +55,37 @@
           </div>
           <div class="col-md-12 mb-3">
             <button type="submit" class="btn btn-primary">add items</button>
-            <button type="submit" class="btn btn-primary">end shift</button>
+            <button type="button" class="btn btn-primary">end shift</button>
           </div>
 
         </form>
       </article>
-      <aside class="shifts col-md-5">
-        <h3>recent shifts</h3>
+      <hr class="rule mt-5 mb-5">
+      <aside class="aside col-md-5 bg-primary text-white">
+
+        <h3 class="text-white">recent shifts</h3>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">March 13, 2022</div>
+            </div>
+            <span class="badge bg-primary rounded-pill"><i class="bi bi-pencil"></i></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">March 14, 2022</div>
+            </div>
+            <span class="badge bg-primary rounded-pill"><i class="bi bi-pencil"></i></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">March 15, 2022</div>
+            </div>
+            <span class="badge bg-primary rounded-pill"><i class="bi bi-pencil"></i></span>
+          </li>
+        </ul>
+
+
       </aside>
 
     </section>
