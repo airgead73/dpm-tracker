@@ -1,4 +1,5 @@
 const asyncHandler = require('express-async-handler');
+const { isDev } = require('../../config/env');
 
 /**
  * @desc dashboard view
@@ -16,7 +17,23 @@ exports.dashboard = asyncHandler(async (req, res, next) => {
 });
 
 /**
- * @desc new shift view
+ * @desc start shift view
+ * @route GET - /add
+ * @access Private
+ * */
+
+ exports.start = asyncHandler(async (req, res, next) => {
+  return res
+    .status(200)
+    .render('pages/start', {
+      success: true,
+      title: 'start shift'
+    });
+});
+
+
+/**
+ * @desc add items view
  * @route GET - /add
  * @access Private
  * */
@@ -26,7 +43,7 @@ exports.dashboard = asyncHandler(async (req, res, next) => {
     .status(200)
     .render('pages/add', {
       success: true,
-      title: 'start shift'
+      title: 'add items'
     });
 });
 
