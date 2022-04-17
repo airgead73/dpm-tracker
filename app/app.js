@@ -17,6 +17,7 @@
 const { isDev } = require('./config/env');
 const { handleError } = require('./middleware');
 const { authConfig, connectDB, helmetPolicies, limiter, sessionConfig } = require('./config');
+const appRouter = require('./router');
 
 /**
  * app activation
@@ -54,11 +55,7 @@ app.set('view engine', 'ejs');
 /**
  * routes
  */
-app.get('/', (req, res, next) => {
-  res.status(200).render('pages/home', {
-    title: 'DPM Catalogue'
-  });
-})
+app.use('/', appRouter);
 
 /**
  * error handling
