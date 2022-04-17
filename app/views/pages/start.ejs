@@ -1,6 +1,30 @@
 <%- include ('../partials/head') %>
   <%- include ('../partials/header') %>
 
-    <h2>start shift</h2>
+    <section class="row">
+      <article class="col-md-7">
+        <form class="row">
+          <legend class="col-md-12 mb-3">
+            <h2>Start Shift</h2>
+          </legend>
+          <div class="col-md-7 mb-3">
+            <label for="date" class="form-label">date</label>
+            <input type="datetime-local" class="form-control" id="date" name="date">
+          </div>
+          <div class="col-md-5 mb-3">
+            <label for="floor" class="form-label">floor</label>
+            <input type="number" class="form-control" id="floor" name="floor" min="2" max="5">
+          </div>
+          <div class="col-md-12 mb-3">
+            <button type="submit" class="btn btn-primary">add</button>
+          </div>
+
+        </form>
+      </article>
+      <aside class="shifts col-md-5">
+        <h3>recent shifts</h3>
+      </aside>
+
+    </section>
 
     <%- include('../partials/footer') %>
