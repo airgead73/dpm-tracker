@@ -10978,4 +10978,37 @@ th {
 .card-title, .card-header {
   color: inherit;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  padding-top: 30px;
+}
+
+.header, .footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.footer__credit {
+  text-align: center;
+}
+
+.shifts {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .shifts {
+    margin-top: 0;
+  }
+}
 /*# sourceMappingURL=main.css.map */
