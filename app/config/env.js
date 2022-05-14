@@ -1,5 +1,6 @@
 /* GENERAL ENVIRONMENT */
 const isDev = process.env.NODE_ENV === 'development';
+const isPr = process.env.NODE_ENV !== 'development';
 
 /* AUTH */
 const authSecret = process.env.AUTH_SECRET;
@@ -90,6 +91,7 @@ if (!sessionSecret) {
 /* export */
 module.exports = {
   isDev,
+  isPr,
   authSecret,
   baseUrl,
   clientId,

@@ -12,7 +12,8 @@ exports.dashboard = asyncHandler(async (req, res, next) => {
     .status(200)
     .render('pages/dashboard', {
       success: true,
-      title: 'tracker'
+      title: 'tracker',
+      development: isDev
     });
 });
 
@@ -27,7 +28,8 @@ exports.dashboard = asyncHandler(async (req, res, next) => {
     .status(200)
     .render('pages/start', {
       success: true,
-      title: 'start shift'
+      title: 'start shift',
+      development: isDev
     });
 });
 
@@ -43,7 +45,8 @@ exports.dashboard = asyncHandler(async (req, res, next) => {
     .status(200)
     .render('pages/add', {
       success: true,
-      title: 'add items'
+      title: 'add items',
+      development: isDev
     });
 });
 
@@ -58,7 +61,8 @@ exports.dashboard = asyncHandler(async (req, res, next) => {
     .status(200)
     .render('pages/active', {
       success: true,
-      title: 'active shift'
+      title: 'active shift',
+      development: isDev
     });
 });
 
@@ -73,7 +77,8 @@ exports.dashboard = asyncHandler(async (req, res, next) => {
     .status(200)
     .render('pages/detail', {
       success: true,
-      title: 'update'
+      title: 'update',
+      development: isDev
     });
 });
 
@@ -88,6 +93,7 @@ exports.dashboard = asyncHandler(async (req, res, next) => {
     .status(200)
     .render('pages/update', {
       success: true,
-      title: 'update'
+      title: 'update',
+      development: isDev
     });
 });
