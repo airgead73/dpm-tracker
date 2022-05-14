@@ -2,16 +2,16 @@
   <%- include ('../partials/header') %>
 
     <section class="row">
-      <article class="col-md-7">
+      <article class="col-md-6">
         <form class="row" method="POST" action="api/shifts" id="startShift">
           <legend class="col-md-12 mb-3">
             <h2>Start Shift</h2>
           </legend>
-          <div class="col-md-7 mb-3">
+          <div class="col-md-12 mb-3">
             <label for="date" class="form-label">date</label>
             <input type="datetime-local" class="form-control" id="date" name="date">
           </div>
-          <div class="col-md-5 mb-3">
+          <div class="col-md-12 mb-3">
             <label for="floor" class="form-label">floor</label>
             <input type="number" class="form-control" id="floor" name="floor" min="2" max="5">
           </div>
@@ -20,7 +20,7 @@
           </div>
         </form>
       </article>
-      <aside class="aside col-md-4 bg-primary text-white">
+      <aside class="aside col-md-6 bg-primary text-white">
         <h3 class="text-white">recent shifts</h3>
         <ul class="list-group list-group-flush">
           <li class="list-group-item d-flex justify-content-between align-items-start">
